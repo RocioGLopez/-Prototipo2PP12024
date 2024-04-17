@@ -9,7 +9,7 @@ class usuarios
         virtual ~usuarios();
         bool loginUsuarios();
         void menuUsuarios();
-        bool buscar(string user, string passw);
+        //bool buscar(string user, string passw);
         string getNombre();
         string setNombre(string nombre);
 

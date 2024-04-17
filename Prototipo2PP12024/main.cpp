@@ -110,21 +110,16 @@ void catalogos(){
 		break;
 	case 3:
 		//modify();
+
+
 		break;
 	case 4:
-        {
-            aplicaciones aplicacion;
-            aplicacion.menu();
-		}
-		//search();
-		break;
-	case 5:
 		break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 		cin.get();
 	}
-    }while(choice!= 5);
+    }while(choice!= 4);
 }
 void informes(){
     int choice;
