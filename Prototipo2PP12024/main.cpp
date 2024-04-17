@@ -7,7 +7,7 @@ using namespace std;
 using namespace std;
 void creditosModulo();
 void catalogos();
-void reportes();
+void informes();
 void menuGeneral();
 
 usuarios usuarioRegistrado;
@@ -61,7 +61,7 @@ void menuGeneral(){
 
 	case 2:
 		//modify();
-		reportes();
+		informes();
 		break;
 
 	case 3:
@@ -80,10 +80,10 @@ void catalogos(){
 	cout<<"\t\t\t--------------------------------------------"<<endl;
 	cout<<"\t\t\t |   SISTEMA GESTION DE VENTAS - Catalogos  |"<<endl;
 	cout<<"\t\t\t--------------------------------------------"<<endl;
-	cout<<"\t\t\t 1. Clientes"<<endl;
-	cout<<"\t\t\t 2. Vendedores"<<endl;
-	cout<<"\t\t\t 3. Cobradores"<<endl;
-	cout<<"\t\t\t 4. Aplicaciones"<<endl;
+	cout<<"\t\t\t 1. Altas"<<endl;
+	cout<<"\t\t\t 2. bajas"<<endl;
+	cout<<"\t\t\t 3. modiificacion"<<endl;
+	cout<<"\t\t\t 4. consulta"<<endl;
 	cout<<"\t\t\t 5. Retornar menu anterior"<<endl;
     cout<<"\t\t\t--------------------------------------------"<<endl;
 	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5]"<<endl;
@@ -126,22 +126,18 @@ void catalogos(){
 	}
     }while(choice!= 5);
 }
-void reportes(){
+void informes(){
     int choice;
     //int x;
     do {
 	system("cls");
 	cout<<"\t\t\t--------------------------------------------"<<endl;
-	cout<<"\t\t\t |   SISTEMA GESTION DE VENTAS - Reportes   |"<<endl;
+	cout<<"\t\t\t |   SISTEMA GESTION DE informes   |"<<endl;
 	cout<<"\t\t\t--------------------------------------------"<<endl;
-	cout<<"\t\t\t 1. Clientes"<<endl;
-	cout<<"\t\t\t 2. Vendedores"<<endl;
-	cout<<"\t\t\t 3. Cobradores"<<endl;
-	cout<<"\t\t\t 4. Conceptos"<<endl;
-	cout<<"\t\t\t 5. Bitacora"<<endl;
-	cout<<"\t\t\t 6. Retornar menu anterior"<<endl;
+	cout<<"\t\t\t 1. impresion"<<endl;
+	out<<"\t\t\t 2. Retornar menu anterior"<<endl;
     cout<<"\t\t\t--------------------------------------------"<<endl;
-	cout<<"\t\t\tOpcion a escoger:[1/2/3/4/5/6]"<<endl;
+	cout<<"\t\t\tOpcion a escoger:[1/2]"<<endl;
 	cout<<"\t\t\t--------------------------------------------"<<endl;
 	cout<<"\t\t\tIngresa tu Opcion: ";
     cin>>choice;
@@ -155,30 +151,15 @@ void reportes(){
     		cout<<"\n\t\t\t Agrega otra persona(Y,N): ";
     		cin>>x;
 		}while(x=='y'||x=='Y');*/
+
 		break;
 	case 2:
-		//display();
-		break;
-	case 3:
-		//modify();
-		break;
-	case 4:
-		//search();
-		break;
-	case 5:
-		//display();
-		{
-            bitacora auditoria;
-            auditoria.menu();
-		}
-		break;
-	case 6:
 		break;
 	default:
 		cout<<"\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
 		cin.get();
 	}
-    }while(choice!= 6);
+    }while(choice!= 2);
 }
 void creditosModulo(){
 string line;
