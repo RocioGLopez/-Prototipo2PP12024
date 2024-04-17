@@ -12,17 +12,9 @@
 using namespace std;
 
 
-usuarios::usuarios()
-{
-    //ctor
-}
 
-usuarios::~usuarios()
-{
-    //dtor
-}
 
-bool usuario::LoginUsuario()
+bool usuarios::loginUsuario()
 {
     string usuario, contra;
     int contador=0;

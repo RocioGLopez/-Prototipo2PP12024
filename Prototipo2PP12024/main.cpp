@@ -104,8 +104,8 @@ void catalogos(){
 	case 2:
 		//display();
 		{
-            vendedores vendedor;
-            vendedor.menu();
+//            vendedores vendedor;
+//            vendedor.menu();
 		}
 		break;
 	case 3:
@@ -130,7 +130,7 @@ void informes(){
 	cout<<"\t\t\t |   SISTEMA GESTION DE informes   |"<<endl;
 	cout<<"\t\t\t--------------------------------------------"<<endl;
 	cout<<"\t\t\t 1. impresion"<<endl;
-	out<<"\t\t\t 2. Retornar menu anterior"<<endl;
+	cout<<"\t\t\t 2. Retornar menu anterior"<<endl;
     cout<<"\t\t\t--------------------------------------------"<<endl;
 	cout<<"\t\t\tOpcion a escoger:[1/2]"<<endl;
 	cout<<"\t\t\t--------------------------------------------"<<endl;

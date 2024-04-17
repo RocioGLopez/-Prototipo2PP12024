@@ -1,5 +1,8 @@
 #ifndef USUARIOS_H
 #define USUARIOS_H
+#include<iostream>
+
+using std::string;
 
 
 class usuarios
@@ -9,7 +12,7 @@ class usuarios
         virtual ~usuarios();
         bool loginUsuarios();
         void menuUsuarios();
-        //bool buscar(string user, string passw);
+        bool buscar(string user, string passw);
         string getNombre();
         string setNombre(string nombre);
 

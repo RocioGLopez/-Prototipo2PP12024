@@ -1,12 +1,15 @@
 #ifndef USUARIO_H
 #define USUARIO_H
 
+#include<iostream>
 
-class usuario
+using std::string;
+
+class usuarios
 {
     public:
         usuarios();
-        virtual ~usuarios();
+      //  virtual ~usuarios();
         bool loginUsuarios();
         void menuUsuarios();
         bool buscar(string user, string passw);
